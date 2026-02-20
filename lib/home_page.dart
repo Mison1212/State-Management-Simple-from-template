@@ -28,7 +28,13 @@ class MyHomePage extends StatelessWidget {
               ],
             ),
           ),
-          
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              counterModel.increment();
+            },
+            tooltip: 'Increment',
+            child: const Icon(Icons.add),
+          ),
         );
       },
     );
