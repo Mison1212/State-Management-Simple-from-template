@@ -9,7 +9,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final counter = context.watch<CounterModel>().angka;
+    final angka = context.watch<CounterModel>().angka;
 
     return Scaffold(
       appBar: AppBar(
@@ -21,7 +21,7 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text('You have pushed the button this many times:'),
-            Text('$counter', style: Theme.of(context).textTheme.headlineMedium),
+            Text('$angka', style: Theme.of(context).textTheme.headlineMedium),
           ],
         ),
       ),
