@@ -4,7 +4,10 @@ import 'home_page.dart';
 import 'counter_model.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => CounterModel(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
